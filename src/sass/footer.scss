@@ -1,0 +1,49 @@
+@import "params";
+
+footer {
+  background-color: $base-color;
+  padding: 39px 19px 24px 13px;
+  display: flex;
+  align-items: center;
+  .contacts {
+    width: 100%;
+    margin-right: 19px;
+    h2 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 21px;
+      color: #333333;
+    }
+    .links {
+      display: flex;
+    }
+    .location {
+      margin: 18px 0 11px 0;
+      display: flex;
+      align-items: flex-start;
+      img {
+        margin-right: 7px;
+      }
+    }
+    .phone {
+      display: flex;
+      margin-bottom: 16px;
+      img {
+        margin-right: 10px;
+      }
+    }
+    .link {
+      width: 30px;
+      height: 30px;
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.footer-add-text {
+  padding: 10px;
+  text-align: center;
+}

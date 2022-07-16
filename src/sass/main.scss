@@ -1,0 +1,61 @@
+@import "mixins";
+@import "params";
+@import "header";
+@import "footer";
+@import "filter";
+@import "nav";
+
+@include card;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    color: white;
+    background-color: #4f4f4f;
+  }
+}
+
+body {
+  background-color: $bg-color;
+}
+
+.container {
+  margin: 0 100px 0 100px;
+  height: 100vh;
+}
+
+.breadcrumbs {
+  margin: 10px;
+  width: 100%;
+  display: flex;
+  & a:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.mainINf {
+  display: flex;
+}
+
+.cardInf {
+  width: 100%;
+}
+
+.cardNavigate {
+  display: flex;
+  justify-content: space-between;
+}
+
+.some-text {
+  color: #4f4f4f;
+  margin-top: 24px;
+  width: 560px;
+}

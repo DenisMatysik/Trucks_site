@@ -1,0 +1,13 @@
+nav {
+  padding: 15px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: $base-color;
+  & a {
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
+  }
+}
