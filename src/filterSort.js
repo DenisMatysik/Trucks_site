@@ -1,5 +1,4 @@
 import data from "./dataset.json";
-
 import { rednerCard } from "./card";
 
 const filterSorts = document.querySelector("#sorts");
