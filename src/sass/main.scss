@@ -49,13 +49,18 @@ body {
   width: 100%;
 }
 
-.cardNavigate {
-  display: flex;
-  justify-content: space-between;
+.some-text {
+  background-color: white;
+  color: black;
+  margin: 24px 0;
+  padding: 20px;
+  // width: 560px;
 }
 
-.some-text {
-  color: #4f4f4f;
-  margin-top: 24px;
-  width: 560px;
+.some-title {
+  font-size: 2em;
+}
+
+.about-us {
+  margin: 10px 0;
 }

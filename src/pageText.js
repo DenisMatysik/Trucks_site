@@ -4,6 +4,7 @@ const rednerPageText = (texts) => {
   const textWrapper = document.querySelector(".some-text");
   texts.forEach((item, i) => {
     const text = document.createElement(`${item.tag}`);
+    text.classList.add("about-us");
     text.innerHTML = `${item.content}`;
     textWrapper.insertAdjacentElement("beforeEnd", text);
   });
