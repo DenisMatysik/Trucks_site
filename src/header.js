@@ -2,6 +2,7 @@ import data from "./dataset.json";
 
 const rednerHeader = (header) => {
   const headerWrapper = document.querySelector(".header");
+
   const text = document.createElement(`h1`);
   const title = document.createElement(`div`);
   text.innerHTML = `${header.h1}`;
