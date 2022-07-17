@@ -137,13 +137,8 @@
           <h1>Trucks</h1>
           <div class="sortdNavigate">
             <div class="sort">
-              <select
-                for="sorts"
-                id="sorts"
-                class="form-select"
-                aria-label="Пример выбора по умолчанию"
-              >
-                <option selected>Sort by</option>
+              <select for="sorts" id="sorts" class="form-select">
+                <option id="select" disabled="true" selected>Sort by</option>
                 <option value="price">Price</option>
                 <option value="payload">Payload</option>
                 <option value="year">Year</option>
@@ -167,7 +162,7 @@
       </div>
       <footer>
         <div class="contacts">
-          <h2>Logo / Company Name</h2>
+          <!-- <img id="logo" alt="" /> -->
           <div class="location">
             <img id="location" />
             <p>Company Adress: Lorem ipsum dolor sit amet 18600, Netherlands</p>
@@ -176,10 +171,11 @@
             <img id="phone" />
             <p>+38 958 755-00-00</p>
           </div>
-            <div class="link facebook"><img id="facebook" /></div>
-            <div class="link instagram"><img id="instagram" /></div>
-            <div class="link twitter"><img id="twitter" /></div>
-            <div class="link youtube"><img id="youtube" /></div>
+          <div class="links">
+            <a href="#" class="link facebook"><img id="facebook" /></a>
+            <a href="#" class="link instagram"><img id="instagram" /></a>
+            <a href="#" class="link twitter"><img id="twitter" /></a>
+            <a href="#" class="link youtube"><img id="youtube" /></a>
           </div>
         </div>
         <div class="footer-text">

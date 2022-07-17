@@ -23,6 +23,18 @@ body {
   background-color: $bg-color;
 }
 
+.textWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h2 {
+    margin: 0;
+  }
+  #logo {
+    width: 5%;
+  }
+}
+
 .breadcrumb {
   margin: 10px;
 }
@@ -59,4 +71,21 @@ body {
 }
 
 .links {
+  .link {
+    border-radius: 50%;
+    &:hover {
+      background-color: $grey2;
+    }
+  }
+}
+
+.titleWrapper {
+  display: flex;
+  align-items: center;
+  h2 {
+    margin: 0;
+  }
+  #logo {
+    width: 50px;
+  }
 }
