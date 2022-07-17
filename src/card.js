@@ -1,6 +1,6 @@
 import data from "./dataset.json";
 
-export const rednerCard = (cards = data.stock) => {
+export const rednerCard = (cards) => {
   const allCards = document.querySelector(".allCards");
   allCards.innerHTML = "";
   if (cards.lenght === 0) {
@@ -24,11 +24,11 @@ export const rednerCard = (cards = data.stock) => {
           mollitia culpa est! Aspernatur, ducimus!
         </div>
         <div class="card-tags">
-          <div>${card.year}</div>
-          <div>${card.mileage} ${card.mileage_measure} </div>
-          <div>${card.axle_configuration}</div>
-          <div>${card.payload}</div>
-          <div>${card.power}</div>
+          <div class="tag">${card.year}</div>
+          <div class="tag">${card.mileage} ${card.mileage_measure} </div>
+          <div class="tag">${card.axle_configuration}</div>
+          <div class="tag">${card.payload}</div>
+          <div class="tag">${card.power} ${card.power_measure}</div>
         </div>
       </div>
     </div>`;
@@ -36,5 +36,5 @@ export const rednerCard = (cards = data.stock) => {
     });
   }
 };
-rednerCard();
+rednerCard(data.stock);
 console.log(data);

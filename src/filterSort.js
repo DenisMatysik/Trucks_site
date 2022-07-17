@@ -15,22 +15,19 @@ filterSorts.addEventListener("change", (e) => {
         if (firstVal == secondVal) return 0;
         if (firstVal < secondVal) return -1;
       });
-      console.log(filterOpt, filterArr);
       rednerCard(filterArr);
       break;
     case "year":
       filterArr.sort((a, b) => a.year - b.year);
-      console.log(filterOpt, filterArr);
       rednerCard(filterArr);
       break;
     case "power":
       filterArr.sort((a, b) => a.power - b.power);
-      console.log(filterOpt, filterArr);
       rednerCard(filterArr);
       break;
     default:
       filterArr.sort((a, b) => a.price - b.price);
-      console.log(filterOpt, filterArr);
       rednerCard(filterArr);
+      break;
   }
 });

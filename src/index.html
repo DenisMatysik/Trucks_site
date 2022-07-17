@@ -98,23 +98,28 @@
           <div class="allCards"></div>
           <div class="cardNavigate">
             <div class="pages">
-              <button>Back</button>
-              <button>1</button>
-              <button>2</button>
-              <button>Forward</button>
+              <button type="button" class="btn btn-secondary">Back</button>
+              <button type="button" class="btn btn-secondary">1</button>
+              <button type="button" class="btn btn-secondary">2</button>
+              <button type="button" class="btn btn-secondary">Forward</button>
             </div>
             <div class="sort">
-              <label for="sorts">Sort by</label>
-              <select name="sorts" id="sorts" form="sortform">
-                <option value="sort_price">Price</option>
-                <option value="sort_payload">Payload</option>
-                <option value="sort_year">Year</option>
-                <option value="sort_power">Power</option>
+              <select
+                for="sorts"
+                id="sorts"
+                class="form-select"
+                aria-label="Пример выбора по умолчанию"
+              >
+                <option selected>Sort by</option>
+                <option value="price">Price</option>
+                <option value="payload">Payload</option>
+                <option value="year">Year</option>
+                <option value="power">Power</option>
               </select>
             </div>
           </div>
           <div class="some-text">
-            <div class="some-title">About us</div>
+            <div class="some-title">About trucks</div>
           </div>
         </div>
       </div>
@@ -144,7 +149,8 @@
         </div>
       </footer>
       <div class="footer-add-text">
-        © 2019 - Privacy Policy - Terms and Conditions
+        © 2019-
+        <a href="#">Privacy Policy - Terms and Conditions</a>
       </div>
     </section>
   </body>

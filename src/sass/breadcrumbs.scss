@@ -1,0 +1,8 @@
+@import "params";
+
+.breadcrumb {
+  margin: 10px;
+  &-item {
+    color: $black;
+  }
+}
