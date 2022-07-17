@@ -1,7 +1,7 @@
 @import "params";
 
 footer {
-  background-color: $base-color;
+  background-color: $white;
   padding: 39px 19px 24px 13px;
   display: flex;
   align-items: center;
@@ -13,7 +13,7 @@ footer {
       font-weight: 700;
       font-size: 18px;
       line-height: 21px;
-      color: #333333;
+      color: $black;
     }
     .links {
       display: flex;

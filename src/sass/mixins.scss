@@ -2,10 +2,9 @@
 
 @mixin card {
   .card {
-    display: flex;
     padding: 16px;
-    background-color: $base-color;
-    margin-bottom: 16px;
+    flex-direction: row;
+    margin: 10px 0;
     & img {
       width: 250px;
       height: 100%;
@@ -34,7 +33,7 @@
       font-size: 16px;
       line-height: 19px;
       text-align: right;
-      color: #4f4f4f;
+      color: $grey3;
     }
     &-text {
       font-style: normal;
@@ -48,13 +47,13 @@
       display: flex;
       div {
         padding: 5px;
-        background-color: #c4c4c4;
+        background-color: $grey2;
         font-style: normal;
         font-weight: 300;
         font-size: 12px;
         line-height: 14px;
         text-align: center;
-        color: $base-color;
+        color: $white;
       }
       div:not(:last-child) {
         margin-right: 16px;

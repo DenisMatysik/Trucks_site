@@ -68,21 +68,26 @@
                 placeholder="select truck by year"
               />
             </div>
-            <button>SEARCH</button>
+            <button type="button" class="btn btn-secondary">Back</button>
           </div>
         </div>
         <div class="cardInf">
-          <h1>Heading Level 1</h1>
+          <h1>Trucks</h1>
           <div class="cardNavigate">
             <div class="pages">
-              <button>Back</button>
-              <button>1</button>
-              <button>2</button>
-              <button>Forward</button>
+              <button type="button" class="btn btn-secondary">Back</button>
+              <button type="button" class="btn btn-secondary">1</button>
+              <button type="button" class="btn btn-secondary">2</button>
+              <button type="button" class="btn btn-secondary">Forward</button>
             </div>
             <div class="sort">
-              <label for="sorts">Sort by</label>
-              <select name="sorts" id="sorts" form="sortform">
+              <select
+                for="sorts"
+                id="sorts"
+                class="form-select"
+                aria-label="Пример выбора по умолчанию"
+              >
+                <option selected>Sort by</option>
                 <option value="price">Price</option>
                 <option value="payload">Payload</option>
                 <option value="year">Year</option>

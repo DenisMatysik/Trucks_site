@@ -1,10 +1,12 @@
+@import "params";
+
 nav {
   padding: 15px;
-  height: 50px;
+  border-radius: 0.2em;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background-color: $base-color;
+  background-color: $white;
   & a {
     &:not(:last-child) {
       margin-right: 32px;
