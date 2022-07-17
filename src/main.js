@@ -1,3 +1,4 @@
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./sass/main.scss";
 import "./header";
 import "./navigate";

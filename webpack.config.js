@@ -30,9 +30,13 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.scss$/, // т.е когда будут подключаться файлы с расширением "scss"
+        test: /\.(scss|css)$/, // т.е когда будут подключаться файлы с расширением "scss"
         use: ["style-loader", "css-loader", "sass-loader"], // будет использоваться библиотека sass-loader (преобразует файлы scss в css), затем css-loader, затем style-loader
       },
+      // {
+      //   test: /\.css$/,
+      //   use: ["style-loader", "css-loader"],
+      // },
       {
         test: /\.(png|svg|jpeg|jpg|gif)$/i, // т.е когда будут подключаться файлы с расширением "png|svg|jpeg|jpg|gif" (i - для регистров PNG)
         type: "asset/resource", // это картика, и с этими файлами будут обращатся как с картинками
