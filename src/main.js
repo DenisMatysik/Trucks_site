@@ -7,3 +7,4 @@ import "./card.js";
 import "./filterSort";
 import "./pageText";
 import "./images";
+import "./filterParams";

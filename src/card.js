@@ -1,6 +1,8 @@
 import data from "./dataset.json";
 
 export const rednerCard = (cards) => {
+  const result = document.querySelector(".filter-result");
+  result.innerHTML = `${cards.length} Results Found`;
   const allCards = document.querySelector(".allCards");
   allCards.innerHTML = "";
   if (cards.lenght === 0) {

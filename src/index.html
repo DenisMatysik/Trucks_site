@@ -16,28 +16,49 @@
           <div class="filter-result"></div>
           <div class="filter-container">
             <div class="params1">
-              <h2>Param1</h2>
+              <h2>Not used(нечего из json файла задавать)</h2>
               <div>
-                <input class="form-check-input" type="checkbox" id="val1" />
+                <input
+                  class="form-check-input"
+                  disabled
+                  type="checkbox"
+                  id="val1"
+                />
                 <label class="form-check-label" for="val1"> value1 </label>
               </div>
               <div>
-                <input class="form-check-input" type="checkbox" id="val2" />
+                <input
+                  class="form-check-input"
+                  disabled
+                  type="checkbox"
+                  id="val2"
+                />
                 <label class="form-check-label" for="val2"> value2 </label>
               </div>
               <div>
-                <input class="form-check-input" type="checkbox" id="val3" />
+                <input
+                  class="form-check-input"
+                  disabled
+                  type="checkbox"
+                  id="val3"
+                />
                 <label class="form-check-label" for="val3"> value3 </label>
               </div>
               <div>
-                <input class="form-check-input" type="checkbox" id="val4" />
+                <input
+                  class="form-check-input"
+                  disabled
+                  type="checkbox"
+                  id="val4"
+                />
                 <label class="form-check-label" for="val4"> value4 </label>
               </div>
             </div>
             <div class="params2">
-              <h2>Param2</h2>
+              <h2>Not used(нечего из json файла задавать)</h2>
               <div>
                 <input
+                  disabled
                   class="form-check-input"
                   name="param2"
                   type="radio"
@@ -47,6 +68,7 @@
               </div>
               <div>
                 <input
+                  disabled
                   class="form-check-input"
                   name="param2"
                   type="radio"
@@ -56,6 +78,7 @@
               </div>
               <div>
                 <input
+                  disabled
                   class="form-check-input"
                   name="param2"
                   type="radio"
@@ -65,6 +88,7 @@
               </div>
               <div>
                 <input
+                  disabled
                   class="form-check-input"
                   name="param2"
                   type="radio"
@@ -79,38 +103,39 @@
                 <input
                   class="form-control"
                   id="minPrice"
-                  type="text"
+                  type="number"
                   placeholder=" min"
                 />
                 <input
                   class="form-control"
                   id="maxPrice"
-                  type="text"
+                  type="number"
                   placeholder=" max"
                 />
               </div>
             </div>
             <div class="params4">
-              <h2>Year</h2>
+              <h2>Year ></h2>
               <input
                 class="form-control"
                 id="yearSelect"
-                type="text"
+                type="number"
                 placeholder=" Select truck by year"
               />
             </div>
-            <button type="button" class="btn btn-secondary">Back</button>
+            <div class="btns">
+              <button id="applyParams" type="button" class="btn btn-secondary">
+                Search
+              </button>
+              <button id="resetParams" type="reset" class="btn btn-danger">
+                Reset
+              </button>
+            </div>
           </div>
         </div>
         <div class="cardInf">
           <h1>Trucks</h1>
-          <div class="cardNavigate">
-            <div class="pages">
-              <button type="button" class="btn btn-secondary">Back</button>
-              <button type="button" class="btn btn-secondary">1</button>
-              <button type="button" class="btn btn-secondary">2</button>
-              <button type="button" class="btn btn-secondary">Forward</button>
-            </div>
+          <div class="sortdNavigate">
             <div class="sort">
               <select
                 for="sorts"
@@ -134,20 +159,6 @@
               <button type="button" class="btn btn-secondary">2</button>
               <button type="button" class="btn btn-secondary">Forward</button>
             </div>
-            <div class="sort">
-              <select
-                for="sorts"
-                id="sorts"
-                class="form-select"
-                aria-label="Пример выбора по умолчанию"
-              >
-                <option selected>Sort by</option>
-                <option value="price">Price</option>
-                <option value="payload">Payload</option>
-                <option value="year">Year</option>
-                <option value="power">Power</option>
-              </select>
-            </div>
           </div>
           <div class="some-text">
             <div class="some-title">About trucks</div>
@@ -165,7 +176,6 @@
             <img id="phone" />
             <p>+38 958 755-00-00</p>
           </div>
-          <div class="links">
             <div class="link facebook"><img id="facebook" /></div>
             <div class="link instagram"><img id="instagram" /></div>
             <div class="link twitter"><img id="twitter" /></div>
