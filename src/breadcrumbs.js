@@ -2,7 +2,6 @@ import data from "./dataset.json";
 
 const rednerBreadcrumbs = (breadcrumbs) => {
   const breadcrumbsWrapper = document.querySelector(".breadcrumb");
-
   breadcrumbs.forEach((item, i) => {
     const text = document.createElement("a");
     text.href = item.href;
@@ -16,5 +15,4 @@ const rednerBreadcrumbs = (breadcrumbs) => {
       "active"
     ); // просто выделить последний элемент
 };
-
 rednerBreadcrumbs(data.breadcrumbs);

@@ -2,7 +2,6 @@ import data from "./dataset.json";
 import { rednerCard } from "./card";
 
 const filterSorts = document.querySelector("#sorts");
-
 filterSorts.addEventListener("change", (e) => {
   const filterArr = data.stock;
   const filterOpt = e.target.value;

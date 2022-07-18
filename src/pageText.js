@@ -9,5 +9,4 @@ const rednerPageText = (texts) => {
     textWrapper.insertAdjacentElement("beforeEnd", text);
   });
 };
-
 rednerPageText(data.page_text);

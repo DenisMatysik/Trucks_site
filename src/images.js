@@ -17,7 +17,6 @@ const location = document.getElementById("location");
 const phone = document.getElementById("phone");
 const twitter = document.getElementById("twitter");
 const youtube = document.getElementById("youtube");
-
 facebook.src = facebookLogo;
 instagram.src = instagramLogo;
 location.src = locationLogo;

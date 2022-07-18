@@ -7,11 +7,9 @@ const yearSelect = document.querySelector("#yearSelect");
 const btn = document.querySelector("#applyParams");
 const reset = document.querySelector("#resetParams");
 const typeLabels = document.querySelectorAll(".form-check-label");
-
 let yearVal = 0,
   minPriceVal = 0,
   maxPriceVal = 1000000;
-
 minPrice.addEventListener("input", (e) => {
   minPriceVal = e.target.value;
 });
@@ -21,7 +19,6 @@ maxPrice.addEventListener("input", (e) => {
 yearSelect.addEventListener("input", (e) => {
   yearVal = e.target.value;
 });
-
 btn.addEventListener("click", () => {
   if (maxPrice.value == "" || maxPrice.value == "" || yearSelect.value == "") {
     alert("Должны быть заданы все поля 'Price' и 'Year'");
@@ -45,7 +42,6 @@ btn.addEventListener("click", () => {
     }
   }
 });
-
 reset.addEventListener("click", () => {
   rednerCard(data.stock);
   yearVal = 0;
@@ -55,7 +51,6 @@ reset.addEventListener("click", () => {
   maxPrice.value = "";
   yearSelect.value = "";
 });
-
 typeLabels.forEach((el) => {
   el.addEventListener("click", (e) => {
     let finalParams = data.stock.filter(

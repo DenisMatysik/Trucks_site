@@ -8,16 +8,13 @@ const rednerHeader = (header) => {
   const text = document.createElement(`h1`);
   const title = document.createElement(`div`);
   const logo = document.createElement("img");
-
   text.innerHTML = `${header.h1}`;
   title.innerHTML = `${header.title}`;
   logo.id = "logo";
   logo.src = logoPict;
-
   textWrapper.appendChild(logo);
   textWrapper.appendChild(text);
   headerWrapper.insertAdjacentElement("beforeEnd", textWrapper);
   headerWrapper.insertAdjacentElement("beforeEnd", title);
 };
-
 rednerHeader(data.page_meta);

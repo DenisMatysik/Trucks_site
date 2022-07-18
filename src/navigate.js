@@ -10,5 +10,4 @@ const rednerNavigate = (navs) => {
     navWrapper.insertAdjacentElement("beforeEnd", text);
   });
 };
-
 rednerNavigate(data.nav);
