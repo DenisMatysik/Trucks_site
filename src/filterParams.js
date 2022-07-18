@@ -54,3 +54,14 @@ reset.addEventListener("click", () => {
   maxPrice.value = "";
   yearSelect.value = "";
 });
+
+const typeLabels = document.querySelectorAll(".form-check-label");
+
+typeLabels.forEach((el) => {
+  el.addEventListener("click", (e) => {
+    let finalParams = data.stock.filter(
+      (item) => item.type == e.target.textContent
+    );
+    rednerCard(finalParams);
+  });
+});

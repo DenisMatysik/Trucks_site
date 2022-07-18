@@ -42,7 +42,7 @@ module.exports = {
   },
   plugins: [
     new htmlWebpackPlugin({
-      title: "My web page",
+      title: "Trucks for sale",
       filename: "index.html",
       template: "src/index.html", // файл шаблон для конечного файла index.html
     }),
