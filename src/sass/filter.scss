@@ -3,7 +3,7 @@
 .filter {
   margin: 10px 20px 0 0;
   padding: 16px;
-  width: 50%;
+  width: 60%;
   height: max-content;
   border-radius: 0.2em;
   background-color: $white;
@@ -12,7 +12,11 @@
     padding-bottom: 10px;
     border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
   }
-
+  .params2 {
+    label {
+      font-size: 14px;
+    }
+  }
   .params3 {
     div {
       display: flex;

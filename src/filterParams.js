@@ -6,6 +6,7 @@ const maxPrice = document.querySelector("#maxPrice");
 const yearSelect = document.querySelector("#yearSelect");
 const btn = document.querySelector("#applyParams");
 const reset = document.querySelector("#resetParams");
+const typeLabels = document.querySelectorAll(".form-check-label");
 
 let yearVal = 0,
   minPriceVal = 0,
@@ -54,8 +55,6 @@ reset.addEventListener("click", () => {
   maxPrice.value = "";
   yearSelect.value = "";
 });
-
-const typeLabels = document.querySelectorAll(".form-check-label");
 
 typeLabels.forEach((el) => {
   el.addEventListener("click", (e) => {
