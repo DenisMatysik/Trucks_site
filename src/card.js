@@ -23,7 +23,7 @@ export const rednerCard = (cards) => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Itaque dicta repudiandae quos natus placeat autem, laboriosam
           libero aperiam ad quas sit? Omnis quasi ipsam veritatis
-          mollitia culpa est! Aspernatur, ducimus!
+          mollitia culpa est! Aspernatur, ducimus!1
         </div>
         <div class="card-tags">
           <div class="tag">${card.year}</div>
